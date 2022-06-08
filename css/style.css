@@ -33,7 +33,7 @@
 
 .row .row>[class^='col'] {
     background-color: #00e064;
-
+    border: 1px #006bf9 solid;
 }
 
 body {

@@ -26,6 +26,7 @@
     min-height: 30px;
     background-color: #006bf9;
     border: 1px gray solid;
+    padding: 10px;
 }
 
 .row .row>[class^='col'] {

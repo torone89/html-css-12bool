@@ -1,0 +1,355 @@
+/********************************/
+/* ***********INDEX************ */
+/********************************/
+
+/*  
+27 RESET 
+53 ROW
+64 COLONNE
+145 OFFSET
+203 DISPLAY
+228 CLASSI FLEXBOX (231 GENERIC) (250 JUSTYFY)
+(277 ALING ITEMS)
+308 GUTTER
+
+
+
+*/
+
+
+
+
+
+
+
+
+/****************/
+/* RESET */
+/****************/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/****************/
+/* CONTAINER */
+/****************/
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 100%;
+    max-width: 100%;
+}
+
+/****************/
+/* ROW */
+/****************/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+/****************/
+/* COLONNE */
+/****************/
+
+/* REGOLE PER TUTTE LE MIE COLONNE */
+.row>[class^='col'] {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+/* Colonne che si dividono lo spazio ecquamente */
+
+.row>.col {
+    max-width: 100%;
+    flex-grow: 1;
+}
+
+
+/* GRIGLIA DI 12 COLONNE*/
+
+.row>.col-1 {
+    flex-basis: calc(100% / 12);
+    max-width: calc(100% / 12);
+}
+
+.row>.col-2 {
+    flex-basis: calc(100% / 12 * 2);
+    max-width: calc(100% / 12 * 2);
+}
+
+.row>.col-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+.row>.col-4 {
+    flex-basis: calc(100% / 12 * 4);
+    max-width: calc(100% / 12 * 4);
+}
+
+.row>.col-5 {
+    flex-basis: calc(100% / 12 * 5);
+    max-width: calc(100% / 12 * 5);
+}
+
+.row>.col-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.row>.col-7 {
+    flex-basis: calc(100% / 12 * 7);
+    max-width: calc(100% / 12 * 7);
+}
+
+.row>.col-8 {
+    flex-basis: calc(100% / 12 * 8);
+    max-width: calc(100% / 12 * 8);
+}
+
+.row>.col-9 {
+    flex-basis: calc(100% / 12 * 9);
+    max-width: calc(100% / 12 * 9);
+}
+
+.row>.col-10 {
+    flex-basis: calc(100% / 12 * 10);
+    max-width: calc(100% / 12 * 10);
+}
+
+.row>.col-11 {
+    flex-basis: calc(100% / 12 * 11);
+    max-width: calc(100% / 12 * 11);
+}
+
+.row>.col-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+/****************/
+/* OFFSET */
+/****************/
+/* Uno Spazio di larghezza variabile che lascio nella mia griglia */
+
+.offset-1 {
+    margin-left: calc(100% / 12);
+}
+
+.offset-2 {
+    margin-left: calc(100% / 12 * 2);
+}
+
+.offset-3 {
+    margin-left: calc(100% / 12 * 3);
+}
+
+.offset-4 {
+    margin-left: calc(100% / 12 * 4);
+}
+
+.offset-5 {
+    margin-left: calc(100% / 12 * 5);
+}
+
+.offset-6 {
+    margin-left: calc(100% / 12 * 8);
+}
+
+.offset-7 {
+    margin-left: calc(100% / 12 * 7);
+}
+
+.offset-8 {
+    margin-left: calc(100% / 12 * 8);
+}
+
+.offset-9 {
+    margin-left: calc(100% / 12 * 9);
+}
+
+.offset-10 {
+    margin-left: calc(100% / 12 * 10);
+}
+
+.offset-11 {
+    margin-left: calc(100% / 12 * 11);
+}
+
+.offset-12 {
+    margin-left: calc(100% / 12 * 12);
+    /* SPAZIO VUOTO PER UNA RIGA A CAPO */
+}
+
+.offset-0 {
+    margin-left: 0
+}
+
+/****************/
+/* DISPLAY */
+/****************/
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+
+/****************/
+/* CLASSI FLEXBOX */
+/****************/
+
+/* Generic  */
+
+.d-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+
+
+
+
+/* Justtify */
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-flex-end {
+    justify-content: flex-end;
+}
+
+.justify-content-flex-start {
+    justify-content: flex-start;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.justify-content-space-around {
+    justify-content: space-around
+}
+
+.justify-content-space-evenly {
+    justify-content: space-evenly;
+}
+
+
+/* Align-Items */
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-flex-start {
+    align-items: flex-start;
+}
+
+.align-items-flex-end {
+    align-items: flex-end;
+}
+
+.align-items-stretch {
+    align-items: stretch;
+}
+
+.align-items-baseline {
+    align-items: baseline;
+}
+
+.align-items-initial {
+    align-items: initial;
+}
+
+.align-items-inherit {
+    align-items: inherit;
+}
+
+
+/* Gutter */
+/* Divizione colonne */
+
+.row.g-1 {
+    margin: 0 -10px;
+}
+
+.row.g-1>[class^='col'] {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.row.g-2 {
+    margin: 0 -20px;
+}
+
+.row.g-2>[class^='col'] {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.row.g-3 {
+    margin: 0 -20px;
+}
+
+.row.g-3>[class^='col'] {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.row.g-4 {
+    margin: 0 40px;
+}
+
+.row.g-4>[class^='col'] {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.row.g-5 {
+    margin: 0 50px;
+}
+
+.row.g-5>[class^='col'] {
+    padding-left: 50px;
+    padding-right: 50px;
+}

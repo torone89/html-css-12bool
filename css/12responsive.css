@@ -1,0 +1,45 @@
+/* ********************************** */
+/* ********************************** */
+/* **********RESPONISIVE **************/
+/* ********************************** */
+/* ********************************** */
+
+/* ********************************** */
+/* ************BREAKPOINTS*********** *
+/* ********************************** */
+/* 
+-- extra-small <576 px (Default)
+-- small 576px
+-- medium 768px
+-- large 992px
+-- extra large 1200px
+-- extra-extra-large 1400 >
+
+*/
+
+
+/* ************SMALL SCREEN*********** */
+
+@media screen and (min-width: 576px) {}
+
+
+
+/* ************MEDIUM SCREEN*********** */
+
+@media screen and (min-width: 768px) {}
+
+
+
+/* ************LARGE SCREEN*********** */
+
+@media screen and (min-width: 992px) {}
+
+
+/* ************EXTRA LARGE SCREEN*********** */
+
+@media screen and (min-width: 1200px) {}
+
+
+/* ************EXTRA - EXTRA LARGE SCREEN*********** */
+
+@media screen and (min-width: 1400px) {}

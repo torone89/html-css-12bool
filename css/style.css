@@ -10,14 +10,8 @@
 
 /* Generic */
 
-.container {
-    background-color: aqua;
-
-
-}
 
 .row {
-    border: 1px dashed yellow;
     padding: 2px;
 
 }
@@ -25,8 +19,16 @@
 .row>[class^='col'] {
     min-height: 30px;
     background-color: #006bf9;
-    border: 1px gray solid;
+    border: 1px white solid;
     padding: 10px;
+}
+
+.card {
+    height: 60px;
+}
+
+.max-30 {
+    max-height: 30px;
 }
 
 .row .row>[class^='col'] {

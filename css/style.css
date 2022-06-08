@@ -1,5 +1,5 @@
 /* Color */
-
+/* COL #006bf9 */
 
 /* Reset */
 * {
@@ -17,25 +17,44 @@
 }
 
 .row {
-    border: 2px dashed yellow;
+    border: 1px dashed yellow;
+    padding: 2px;
+
 }
 
 .row>[class^='col'] {
-    min-height: 100px;
-    background-color: blanchedalmond;
+    min-height: 30px;
+    background-color: #006bf9;
     border: 1px gray solid;
 }
 
 .row .row>[class^='col'] {
-    background-color: orange;
+    background-color: #00e064;
 
 }
 
+body {
+    font-size: 8px;
+    font-weight: 400;
+    color: white;
+    font-family: sans-serif;
+}
+
+h4 {
+    color: black;
+    font-weight: 700;
+    font-size: 10px;
+}
 
 /* Utilities */
 
 .mt-30 {
     margin-top: 30px;
+}
+
+
+.mt-5 {
+    margin-top: 5px;
 }
 
 /* Header */
